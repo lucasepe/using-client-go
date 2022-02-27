@@ -1,0 +1,13 @@
+apiVersion: bella.napoli.it/v1alpha1
+kind: Pizza
+metadata:
+  name: margherita
+spec:
+  toppings:
+  - San Marzano Tomatoes
+  - Fresh Mozzarella
+  - Fresh Basil
+  - Olive Oil
+status:
+  cost: 5.00
+  

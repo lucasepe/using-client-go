@@ -1,0 +1,57 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  # name must match the spec fields below, and be in the form: <plural>.<group>
+  name: pizzas.bella.napoli.it
+spec:
+  # group name to use for REST API: /apis/<group>/<version>
+  group: bella.napoli.it
+  names:
+    # kind is normally the CamelCased singular type. Your resource manifests use this.
+    kind: Pizza
+    listKind: PizzaList
+    # plural name to be used in the URL: /apis/<group>/<version>/<plural>
+    plural: pizzas
+    # singular name to be used as an alias on the CLI and for display
+    singular: pizza
+    # shortNames allow shorter string to match your resource on the CLI
+    shortNames:
+    - piz
+  # either Namespaced or Cluster
+  scope: Namespaced
+  # list of versions supported by this CustomResourceDefinition
+  versions:
+  - name: v1alpha1
+    additionalPrinterColumns:
+    - jsonPath: .status.cost
+      description: The Pizza cost
+      name: Cost (€)
+      type: number
+  
+    schema:
+      openAPIV3Schema:
+        type: object
+        properties:
+          spec:
+            properties:
+              toppings:
+                description: toppings is a list of Topping names. They don't have
+                  to be unique. Order does not matter.
+                items:
+                  type: string
+                type: array
+            required:
+            - toppings
+            type: object
+          status:
+            properties:
+              cost:
+                description: cost is the cost of the whole pizza including all toppings.
+                type: number
+            type: object
+        type: object
+    # Each version can be enabled/disabled by Served flag
+    served: true
+    # One and only one version must be marked as the storage version
+    storage: true
+
