@@ -8,10 +8,6 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 )
 
-// Writing Kubernetes client apps using Go
-//
-// Creating a `rest.Config` using flags to specify a custom kubeconfig file.
-//
 func main() {
 	// retrieve the value of the KUBECONFIG environment variable
 	defaultKubeconfig := os.Getenv(clientcmd.RecommendedConfigPathEnvVar)

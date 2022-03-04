@@ -6,10 +6,10 @@ All the Go code examples used in [Using `client-go` notebook](#) are available h
 
 ## Season 1
 
-- [Initializing a client](./creating-a-rest-config-instance/README.md)
-- [Using `rest.Client`](./using-rest-client/README.md)
-- [Using `kubernetes.Clientset`](./using-kubernetes-clientset/README.md)
-- [Using `dynamic.Interface`](./using-dynamic-interface/README.md)
-- [Using `discovery.DiscoveryClient`](./using-discovery-client/README.md)
-- [Using labels and selectors](./labels-and-selectors/README.md)
-- [Displaying HTTP API calls](./display-http-calls/README.md)
+- [Initializing a client](./creating-a-rest-config-instance/)
+- [Using `rest.Client`](./using-rest-client/)
+- [Using `kubernetes.Clientset`](./using-kubernetes-clientset/)
+- [Using `dynamic.Interface`](./using-dynamic-interface/)
+- [Using `discovery.DiscoveryClient`](./using-discovery-client/)
+- [Using labels and selectors](./labels-and-selectors/)
+- [Displaying HTTP API calls](./display-http-calls/)
