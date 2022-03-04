@@ -13,3 +13,5 @@ All the Go code examples used in [Using `client-go` notebook](#) are available h
 - [Using `discovery.DiscoveryClient`](./using-discovery-client/)
 - [Using labels and selectors](./labels-and-selectors/)
 - [Displaying HTTP API calls](./display-http-calls/)
+- [Watching for changes](./watching/)
+- [Using `RetryWatcher`](./using-retrywatcher/)
