@@ -12,6 +12,8 @@ Thank you!
 
 ## Season 1
 
+Download notebook TOC [here](./using-client-go-notebook-toc.pdf)
+
 - [Initializing a client](./creating-a-rest-config-instance/)
 - [Using `rest.Client`](./using-rest-client/)
 - [Using `kubernetes.Clientset`](./using-kubernetes-clientset/)
