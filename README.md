@@ -15,3 +15,4 @@ All the Go code examples used in [Using `client-go` notebook](#) are available h
 - [Displaying HTTP API calls](./display-http-calls/)
 - [Watching for changes](./watching/)
 - [Using `RetryWatcher`](./using-retrywatcher/)
+- [Using `SharedInformer`](./using-informers/)
