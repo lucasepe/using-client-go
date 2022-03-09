@@ -4,7 +4,11 @@ Writing Golang clients for talking to a Kubernetes cluster
 
 All the Go code examples used in [Using `client-go` notebook](https://leanpub.com/using-client-go-season-1) are available here.
 
-If you like the topic and wants to support me, please buy the notebook @ <https://leanpub.com/using-client-go-season-1>, thank you!
+If you like the topic and want to support me, you could buy the notebook 
+
+@ <https://leanpub.com/using-client-go-season-1>
+
+Thank you!
 
 ## Season 1
 
