@@ -64,7 +64,7 @@ func main() {
 	kubeconfig := flag.String(clientcmd.RecommendedConfigPathFlag,
 		defaultKubeconfig, "absolute path to the kubeconfig file")
 
-	namespace := flag.String("namespace", "default",
+	namespace := flag.String("namespace", metav1.NamespaceDefault,
 		"create the deployment in this namespace")
 
 	verbose := flag.Bool("verbose", false, "display HTTP calls")

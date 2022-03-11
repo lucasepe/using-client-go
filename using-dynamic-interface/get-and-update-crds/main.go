@@ -10,11 +10,6 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 )
 
-// $ kubectl apply -f using-dynamic-interface/get-and-update-crds/pizza_crd.yaml
-// $ kubectl apply -f using-dynamic-interface/get-and-update-crds/margherita.yaml
-// $ kubectl get piz
-// go run using-dynamic-interface/get-and-update-crds/main.go
-// $ kubectl get piz
 func main() {
 	configLoader := clientcmd.NewNonInteractiveDeferredLoadingClientConfig(
 		clientcmd.NewDefaultClientConfigLoadingRules(),

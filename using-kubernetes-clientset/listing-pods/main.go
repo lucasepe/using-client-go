@@ -14,13 +14,6 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 )
 
-// Writing Kubernetes client apps using Go
-//
-// Using Clientset - Listing all the pods in the default namespace
-//
-// This client-go example emulate the command:
-// $ kubectl get pods
-//
 func main() {
 	defaultKubeconfig := os.Getenv(clientcmd.RecommendedConfigPathEnvVar)
 	if len(defaultKubeconfig) == 0 {
@@ -30,7 +23,7 @@ func main() {
 	kubeconfig := flag.String(clientcmd.RecommendedConfigPathFlag,
 		defaultKubeconfig, "absolute path to the kubeconfig file")
 
-	namespace := flag.String("namespace", "default", "create the deployment in this namespace")
+	namespace := flag.String("namespace", metav1.NamespaceDefault, "create the deployment in this namespace")
 
 	flag.Parse()
 

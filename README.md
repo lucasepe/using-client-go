@@ -2,17 +2,17 @@
 
 **Writing Golang clients for talking to a Kubernetes cluster**
 
-Go source code examples used in [Using `client-go` notebook](https://leanpub.com/using-client-go-season-1) are available here.
+Go source code examples used in [Using `client-go` notebook](https://leanpub.com/using-client-go) are available here.
 
-If you like the topic and want to support me, you could buy the notebook on [Leanpub](https://leanpub.com/using-client-go-season-1)
+If you like the topic and want to support me, you could buy the notebook on [Leanpub](https://leanpub.com/using-client-go)
 
-&nbsp;&nbsp;&nbsp;&nbsp;@ <https://leanpub.com/using-client-go-season-1>
+&nbsp;&nbsp;&nbsp;&nbsp;@ <https://leanpub.com/using-client-go>
+
+You can download the notebook TOC and same random page [here](./using-client-go-toc-and-some-random-pages.pdf)
 
 Thank you!
 
-## Season 1
-
-Download notebook TOC [here](./using-client-go-notebook-toc.pdf)
+--
 
 - [Initializing a client](./creating-a-rest-config-instance/)
 - [Using `rest.Client`](./using-rest-client/)
@@ -24,3 +24,4 @@ Download notebook TOC [here](./using-client-go-notebook-toc.pdf)
 - [Watching for changes](./watching/)
 - [Using `RetryWatcher`](./using-retrywatcher/)
 - [Using `SharedInformer`](./using-informers/)
+- [Using work queues to write a custom Controller](./workqueue/)

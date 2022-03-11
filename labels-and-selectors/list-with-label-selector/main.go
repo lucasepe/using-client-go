@@ -14,26 +14,6 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 )
 
-/*
-kubectl create namespace be-system
-kubectl create namespace fe-system
-
-kubectl label namespaces fe-system team=frontend
-kubectl label namespaces be-system team=backend
-
-$ go run labels-and-selectors/list-pods-using-label-selectors/main.go
-be-system
-default
-fe-system
-kube-node-lease
-kube-public
-kube-system
-local-path-storage
-
-$ go run labels-and-selectors/list-pods-using-label-selectors/main.go team=frontend
-
-$ go run labels-and-selectors/list-pods-using-label-selectors/main.go 'team notin (frontend,backend)'
-*/
 func main() {
 	defaultKubeconfig := os.Getenv(clientcmd.RecommendedConfigPathEnvVar)
 	if len(defaultKubeconfig) == 0 {

@@ -13,13 +13,6 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 )
 
-// Writing Kubernetes client apps using Go
-//
-// Using RESTClient - Creating a Deployment
-//
-// This client-go example emulate the command:
-// $ kubectl create deployment nginx --image=nginx`
-//
 func main() {
 	configLoader := clientcmd.NewNonInteractiveDeferredLoadingClientConfig(
 		clientcmd.NewDefaultClientConfigLoadingRules(),

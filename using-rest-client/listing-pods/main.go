@@ -14,13 +14,6 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 )
 
-// Writing Kubernetes client apps using Go
-//
-// Using RESTClient - Listing all pods
-//
-// This client-go example emulate the command:
-// $ kubectl get pods
-//
 func main() {
 	configLoader := clientcmd.NewNonInteractiveDeferredLoadingClientConfig(
 		clientcmd.NewDefaultClientConfigLoadingRules(),

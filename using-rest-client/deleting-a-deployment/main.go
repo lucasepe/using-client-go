@@ -12,16 +12,6 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 )
 
-// Writing Kubernetes client apps using Go
-//
-// Using RESTClient - Deleting a Deployment
-//
-// This client-go example emulate the command:
-// $ kubectl delete deployment nginx
-//
-// Deployment Kubernetes API Reference:
-// https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/deployment-v1/#delete-delete-a-deployment
-//
 func main() {
 	configLoader := clientcmd.NewNonInteractiveDeferredLoadingClientConfig(
 		clientcmd.NewDefaultClientConfigLoadingRules(),
