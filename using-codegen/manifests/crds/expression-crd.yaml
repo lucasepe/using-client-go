@@ -28,7 +28,7 @@ spec:
       name: Expression
       type: string
     - jsonPath: .status.result
-      description: The exoression evaluation result
+      description: The evaluation result
       name: Result
       type: string
     schema:

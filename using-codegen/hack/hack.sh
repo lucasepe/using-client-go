@@ -32,6 +32,7 @@ HACK_PKG=${HACK_PKG:-$(
   ls -d -1 ../vendor/k8s.io/code-generator 2>/dev/null || echo ../code-generator
 )}
 
+# Replace this with your module name
 MODULE_ROOT="github.com/lucasepe/using-client-go/using-codegen"
 
 bash "${HACK_PKG}"/generate-groups.sh "deepcopy,client" \
@@ -40,5 +41,6 @@ bash "${HACK_PKG}"/generate-groups.sh "deepcopy,client" \
   expression:v1alpha1 \
   --go-header-file "${SCRIPT_ROOT}"/hack/boilerplate.go.txt
 
+# Hack to move the generated code in the right place
 cp -r ${MODULE_ROOT}/pkg/* ./pkg
 rm -rf "github.com"
