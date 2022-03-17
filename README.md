@@ -25,3 +25,4 @@ Thank you!
 - [Using `RetryWatcher`](./using-retrywatcher/)
 - [Using `SharedInformer`](./using-informers/)
 - [Using work queues to write a custom Controller](./workqueue/)
+- [Using code generators](./using-codegen/)

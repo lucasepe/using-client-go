@@ -41,15 +41,5 @@ experiments/**
 .env
 **/*.env
 
-# Crossplane stuffs
-.cache/**
-.work/**
-_output/**
-cover.out
+# Vendor dirs
 vendor/**
-.vendor-new/**
-.tool-versions
-demo.yaml
-# *.gif
-.dccache
-secret.txt

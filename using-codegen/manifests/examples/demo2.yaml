@@ -1,0 +1,13 @@
+apiVersion: example.org/v1alpha1
+kind: Expression
+metadata:
+  name: demo2
+  namespace: default
+spec:
+  body: x + y < z
+  data: |-
+    {
+      "x": 8,
+      "y": 1,
+      "z": 7
+    }
